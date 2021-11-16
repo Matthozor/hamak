@@ -1,0 +1,59 @@
+.testimony__container {
+    margin-top: 108px;
+}
+
+.testimony__card {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 167px;
+}
+
+.testimony__cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: $color-white;
+}
+
+.testimony__cardTtitle {
+    margin-bottom: 25px;
+    font: 400 25px/1.2 $montserrat;
+}
+
+.testimony__cardText {
+    color: $color-grey-light;
+    font: 400 45px/1.2 $rubik;
+}
+
+.testimony__cardIdentity {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 135px;
+    font: 400 20px/1.2 $montserrat;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 17px;
+        left: -130px;
+        height: 1px;
+        width: 105px;
+        background: $color-black;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.testimony__blockPurple {
+    background: $color-purple-light;
+
+    &__text {
+        padding-bottom: 450px;
+        margin-top: -220px;
+    }
+}
