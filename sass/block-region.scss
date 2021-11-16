@@ -1,8 +1,56 @@
 .region__container {
+    position: relative;
     margin-top: 45px;
 }
 
 .region__image {
     display: flex;
     justify-content: end;
+}
+
+.region__blockOrange {
+    position: absolute;
+    top: 71px;
+    width: 538px;
+    padding: 82px 90px;
+    border-radius: 0 100px 0 0;
+    background: $color-yellow-light;
+}
+
+.region__blockTransparent {
+    position: absolute;
+    width: 623px;
+    bottom: 0px;
+    left: 94px;
+    border-radius: 0 100px 0 0;
+    padding: 35px 106px 35px 71px;
+    font: 400 18px/1.2 $rubik;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+
+    &__text {
+        max-width: 430px;
+
+        &:not(:first-child) {
+            margin-bottom: 38px;
+        }
+    }
+
+    &__link {
+        padding: 12px 40px;;
+        border-radius: 25px;
+        color: $color-black;
+        background: $color-yellow-light;
+        text-decoration:none;
+        transition: background 0.4s, color 0.4s;
+    
+        &:hover {
+            background: $color-purple-light;
+            color: $color-white;
+        }
+    
+        span {
+            font: 700 14px/1.2 $montserrat;
+        }
+    }
 }

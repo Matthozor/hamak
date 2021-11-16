@@ -18,11 +18,11 @@
 
 .header__text {
     margin-right: 42px;
-    font: 600 18px/1.2 $font;
+    font: 600 18px/1.2 $montserrat;
     color: $color-black;
 
     @include desktop {
-        font: 600 18px/1.2 $font;
+        font: 600 18px/1.2 $montserrat;
     }
 }
 
@@ -40,6 +40,6 @@
     }
 
     span {
-        font: 700 14px/1.2 $font;
+        font: 700 14px/1.2 $montserrat;
     }
 }
