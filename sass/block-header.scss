@@ -1,0 +1,45 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 49px 76px 0;
+}
+
+.header__image {
+    img {
+        max-width: 377px;
+    }
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+}
+
+.header__text {
+    margin-right: 42px;
+    font: 600 18px/1.2 $font;
+    color: $color-black;
+
+    @include desktop {
+        font: 600 18px/1.2 $font;
+    }
+}
+
+.header__link {
+    padding: 14px 30px;
+    border-radius: 25px;
+    color: $color-black;
+    background: $color-yellow-light;
+    text-decoration:none;
+    transition: background 0.4s, color 0.4s;
+
+    &:hover {
+        background: $color-purple-light;
+        color: $color-white;
+    }
+
+    span {
+        font: 700 14px/1.2 $font;
+    }
+}
