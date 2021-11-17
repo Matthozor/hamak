@@ -117,10 +117,23 @@
     justify-content: space-between;
     align-items: center;
     width: 50%;
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 35px;
+        font: 400 18px/1.2 $montserrat;
+    }
 }
 
 .footer__copyright {
-    text-align: center;
     margin-top: 95px;
     padding-bottom: 20px;
+    font: 400 18px/1.2 $montserrat;
+    text-align: center;
 }
