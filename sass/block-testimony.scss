@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 80px;
     width: 100%;
     background: $color-white;
 }
@@ -31,14 +32,14 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-left: 135px;
+    margin-left: 20px;
     font: 400 20px/1.2 $montserrat;
 
     &::before {
         content: "";
         position: absolute;
         top: 17px;
-        left: -130px;
+        left: -15px;
         height: 1px;
         width: 105px;
         background: $color-black;
@@ -50,10 +51,25 @@
 }
 
 .testimony__blockPurple {
-    background: $color-purple-light;
+    position: relative;
+    z-index: -1;
+    padding-left: 168px;
 
-    &__text {
+    &__content {
+        background: $color-purple-light;
+        width: 100%;
         padding-bottom: 450px;
         margin-top: -220px;
+        height: 120px;
+        border-radius: 0 0 0 100px;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 77px;
+        left: 20%;
+        max-width: 675px;
+        font: 500 35px/1.4 $montserrat;
+        color: $color-white;
     }
 }

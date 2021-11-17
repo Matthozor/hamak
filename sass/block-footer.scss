@@ -1,0 +1,126 @@
+.footer__container {
+    margin-top: 200px;
+}
+
+.footer__decoration {
+    display: flex;
+    width: 100%;
+    height: 28px;
+
+    // barre de couleurs footer
+
+    &__green, &__lightOrange, &__purple, &__lightBlue, &__pink, &__yellow, &__orange, &__blue {
+        width: 12.5%;
+    }
+
+    &__green {
+        background: $color-green-light;
+    }
+
+    &__lightOrange {
+        background: $color-orange-light;
+    }
+
+    &__purple {
+        background: $color-purple-light;
+    }
+
+    &__lightBlue {
+        background: $color-blue-light;
+    }
+
+    &__pink {
+        background: $color-pink;
+    }
+
+    &__yellow {
+        background: $color-yellow-medium;
+    }
+
+    &__orange {
+        background: $color-orange;
+    }
+
+    &__blue {
+        background: $color-blue;
+    }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 165px;
+}
+
+.footer__blockLeft {
+    width: 50%;
+
+    h2 {
+        max-width: 310px;
+        font: 700 35px/1.2 $montserrat;
+    }
+
+    h3 {
+        font: 400 24px/1.8 $montserrat;
+    }
+
+    .footer__propTitle {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer__followTitle {
+        margin-top: 45px;
+    }
+
+    &__inscription {
+        margin-top: 35px;
+        font: 500 25px/1.4 $montserrat;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__history {
+        max-width: 460px;
+        font: 400 14px/1.6 $montserrat;
+    }
+
+    .footer__socialMedia {
+        display: flex;
+        margin-top: 20px;
+
+        &__facebook,
+        &__youtube {
+            margin-right: 20px;
+        }
+
+        &__facebook,
+        &__youtube,
+        &__instagram {
+            fill: $color-purple-light;
+            transition: fill 0.4s;
+
+            &:hover {
+                fill: $color-yellow-medium;
+            }
+        }
+    }
+}
+
+.footer__blockRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 95px;
+    padding-bottom: 20px;
+}
